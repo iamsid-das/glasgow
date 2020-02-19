@@ -1,0 +1,20 @@
+<header class="header">
+<nav class="navbar navbar-expand-lg fixed">
+<div class="container"><a href="/" class="navbar-brand"><img src="assets/logo.png" alt="logo" class="img-fluid"></a>
+  <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">Menu<i class="fa fa-bars ml-2"></i></button>
+    <div id="navbarSupportedContent" class="collapse navbar-collapse">
+    <ul class="navbar-nav ml-auto">
+    <!-- Link-->
+    <li class="nav-item"> <a href="contact.html" class = "nav-link">Contact</a></li>
+    <% if account_signed_in? %>
+    <li class="nav-item"><%= link_to "Dashboard",dashboard_index_path, class: "nav-link" %></li>
+    <% end %> 
+    <% if account_signed_in? %>
+    <li class="nav-item"> <%= link_to "Log out", destroy_account_session_path, method: :delete, class: "nav-link" %></li>
+    <% else %>
+    <li class="nav-item"><%= link_to "Login",new_account_session_path, class: "nav-link" %></li>
+    <% end %></div>
+    <a href="#" class="btn btn-primary navbar-btn ml-0 ml-lg-3">Add Restaurant</a></ul>
+</div>
+</nav> 
+</header>

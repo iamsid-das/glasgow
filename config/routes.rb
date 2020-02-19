@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'dashboard/index'
+  get 'dashboard/restaurants'
+  get 'dashboard/reports'
   resources :restaurants
   devise_for :accounts
   root to: 'public#main'
