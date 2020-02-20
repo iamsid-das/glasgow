@@ -9,34 +9,39 @@
         <% end %>
       </ul>
     </div>
-  <% end %>
+    <% end %>
+ 
 
-  <div class="field">
+  <div class="form-group mb-4">
     <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group mb-4">
     <%= form.label :address %>
-    <%= form.text_field :address %>
+    <%= form.text_field :address, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description %>
-  </div>
-
-  <div class="field">
+  <div class="form-group mb-4">
     <%= form.label :cuisine %>
-    <%= form.text_field :cuisine %>
+    <%= form.text_field :cuisine, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :photo %>
-    <%= form.text_field :photo %>
+  <div class="form-group mb-4">
+    <%= form.label :description %>
+    <%= form.text_field :description, class: "form-control" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-group mb-5">
+    <%= form.label :photo %> 
+    <%= form.file_field :photo, class: "form-control" %>
+    
+    <% if @restaurant.photo.present? %>
+    <% image_tag @restaurant.photo.thumb.url, class:"mt-4" %>
+    <% end %>
+  </div>
+    
+  <div class="actions" class: "form-group mb-4">
+  <%= form.submit%>
   </div>
 <% end %>
