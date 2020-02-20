@@ -35,8 +35,6 @@ gem "fog", '~> 1.37.0'
 #Image Re-sizing
 gem "mini_magick"
 
-gem 'font-awesome-sass', '~> 5.12.0'
-
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
