@@ -13,16 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  
-  </head>
-
-  <body>
-    <%= yield %>
-    <%= render "layouts/footer" %>
-
-  </body>
-
-  <!-- Start of Async Drift Code -->
+    <!-- Start of Async Drift Code -->
   <script>
   "use strict";
   
@@ -50,4 +41,12 @@
   drift.load('im7ibu6u76mz');
   </script>
   <!-- End of Async Drift Code -->
+  
+  </head>
+
+  <body>
+    <%= yield %>
+    <%= render "layouts/footer" %>
+
+  </body>
 </html>
