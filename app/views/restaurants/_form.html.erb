@@ -34,10 +34,10 @@
 
   <div class="form-group mb-5">
     
-    <%= f.label :photo, "Choose Photo" %> 
-    <%= f.file_field :photo, class: "form-control" %>
+    <%= form.label :photo, "Choose Photo" %> 
+    <%= formfile_field :photo, class: "form-control" %>
     
-    <%= f.hidden_field :photo_cache %>
+    <%= form.hidden_field :photo_cache %>
     
     <% if @restaurant.photo.present? %>
     <% image_tag @restaurant.photo.thumb.url, class:"mt-4" %>
