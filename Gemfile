@@ -30,7 +30,7 @@ gem 'lightbox2-rails'
 
 #image uploading to Amazon S3
 gem 'carrierwave'
-gem "fog", '~> 1.37.0'
+gem 'fog', '~> 1.38'
 
 #Image Re-sizing
 gem "mini_magick"
