@@ -35,7 +35,7 @@
   <div class="form-group mb-5">
     
     <%= form.label :photo, "Choose Photo" %> 
-    <%= formfile_field :photo, class: "form-control" %>
+    <%= form.file_field :photo, class: "form-control" %>
     
     <%= form.hidden_field :photo_cache %>
     
