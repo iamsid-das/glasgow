@@ -400,6 +400,7 @@ DEPENDENCIES
   figaro
   fog (~> 1.37.0)
   font-awesome-rails
+  image_processing (~> 1.2)
   jbuilder (~> 2.7)
   jquery-rails
   lightbox2-rails
