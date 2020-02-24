@@ -97,6 +97,8 @@
 
 <p id="notice"><%= notice %></p>
 
+<div class="form-group mb-4">
+
 <p>
   <strong>Name:</strong>
   <%= @restaurant.name %>
@@ -122,6 +124,8 @@
   <%= @restaurant.photo %>
 </p>
 
+
 <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
 <%= link_to 'Back', restaurants_path %>
+</div>
 </div>
