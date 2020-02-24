@@ -29,8 +29,7 @@ gem "font-awesome-rails"
 gem 'lightbox2-rails'
 
 #image uploading to Amazon S3
-gem 'carrierwave'
-gem "fog-aws"
+
 gem 'mime-types'
 
 #Image Re-sizing
@@ -54,7 +53,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem "figaro"
+  
   gem 'aws-sdk-rails'
 end
 
