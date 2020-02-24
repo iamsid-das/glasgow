@@ -391,7 +391,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk-rails
-  bootsnap (>= 1.4.2)
+  bootsnap (>= 1.4.1)
   bootstrap (~> 4.4.1)
   byebug
   capybara (>= 2.15)
