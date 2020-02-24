@@ -30,8 +30,6 @@ gem 'lightbox2-rails'
 
 #image uploading to Amazon S3
 
-gem 'mime-types'
-
 #Image Re-sizing
 gem "mini_magick"
 
