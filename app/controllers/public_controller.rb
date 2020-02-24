@@ -1,7 +1,7 @@
 class PublicController < ApplicationController
 
   def main
-    @restaurants = Restaurant.latest
+    @restaurant = Restaurant.latest
   end
   
 end
