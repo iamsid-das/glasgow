@@ -39,7 +39,7 @@
     <%= form.hidden_field :photo_cache %>
     
     <% if @restaurant.photo.present? %>
-    <%= image_tag @restaurant.photo.thumb.url, class:"mt-4" %>
+    <%= image_tag @restaurant.photo.thumbnail.url, class:"mt-4" %>
     <% end %>
   </div>
     
