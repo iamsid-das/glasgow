@@ -1,6 +1,7 @@
 <% @restaurants.each do |restaurant| %>
 
     <div class="col-4">
+    <%= link_to(restaurant_thumbnail(restaurant)) %>
     <h3 class="h5 mt-3"><%= restaurant.name %></h3>
     <p><%= restaurant.address %></p>
     </div>
