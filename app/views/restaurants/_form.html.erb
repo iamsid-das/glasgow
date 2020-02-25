@@ -38,7 +38,7 @@
     <%= form.file_field :photo, class: "form-control" %>
     
     <% if @restaurant.photo.present? %>
-    <% image_tag @restaurant.photo.thumb.url, class:"mt-4" %>
+    <%= image_tag @restaurant.photo.thumb.url, class:"mt-4" %>
     <% end %>
   </div>
     
