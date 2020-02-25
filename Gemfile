@@ -31,6 +31,7 @@ gem 'lightbox2-rails'
 #image uploading to Amazon S3
 gem 'carrierwave'
 gem "fog-aws"
+gem "figaro"
 
 #Image Re-sizing
 gem "mini_magick"
