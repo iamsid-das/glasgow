@@ -12899,5 +12899,6 @@ footer.main-footer {
 .restaurant-thumbnail{
 
   height: 170px;
-
+  border-image-repeat: no-repeat;
+  border-image: cover;
 }
