@@ -1,9 +1,9 @@
 <% @restaurants.each do |restaurant| %>
 
     <div class="col-4">
-    <div class="restaurant border">
-    <%= link_to restaurant_path(restaurant.id) do %>
+    <div class="restaurant border">    
     <div class="restaurant-summary p-3">
+    <%= link_to restaurant_path(restaurant.id) do %>
     <%= image_tag restaurant.photo_url(:thumbnail).to_s %>
     <% end %>
     <h3 class="h5 mt-3"><%= restaurant.name %></h3>
