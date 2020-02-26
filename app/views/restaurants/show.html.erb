@@ -20,13 +20,17 @@
         </nav>
         <!-- End of Topbar -->
 
-      <div class="restaurant-main-photo">
+      <div class="container">
+      <div class="row">
+      <div class="col-8">
       <%= image_tag @restaurant.photo.url %>
+      </div>
+      </div>
       </div>
 
       <div class="container">
       <div class="row">
-      <div class="col-8">
+      <div class="col-4">
 
       
       <div class="d-sm-flex align-items-center justify-content-between mb-4">
@@ -47,9 +51,6 @@
   <strong>Cuisine:</strong>
   <%= @restaurant.cuisine %>
 </p>
-</div>
-
-<div class="col-4">
 
 </div>
 </div>
