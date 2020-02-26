@@ -35,9 +35,7 @@
 
       <div class="modal-body p-4 p-lg-5">
 
-<p id="notice"><%= notice %></p>
-
-<div class="form-group mb-4">
+      <div class="col-1">
 
 <p>
   <strong>Name:</strong>
@@ -59,10 +57,16 @@
   <%= @restaurant.cuisine %>
 </p>
 
+</div>
+
+<div class="col-2">
+
 <p>
   <strong>Photo:</strong>
   <%= image_tag @restaurant.photo.url %>
 </p>
+
+</div>
 <br>
 <br>
 <br>
