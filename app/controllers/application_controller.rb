@@ -7,4 +7,7 @@ class ApplicationController < ActionController::Base
         devise_parameter_sanitizer.permit(:update, keys: [:first_name, :last_name, :url])
         devise_parameter_sanitizer.permit(:sign_up, keys: [:first_name, :last_name])
     end
+    def title(text)
+        content_for :title, text
+      end
     end

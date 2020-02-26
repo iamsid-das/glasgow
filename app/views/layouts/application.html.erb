@@ -42,7 +42,10 @@
   </script>
   <!-- End of Async Drift Code -->
 
-  <title><%= yield(:title) %></title>
+  <title>
+  <%= if content_for?(:title) then yield(:title) + ' | ' end %>
+  Reservezy
+</title>
   
   </head>
 
