@@ -10,12 +10,13 @@
 
     <!-- Topbar Navbar -->
       <ul class="navbar-nav ml-auto">
-    
+      <li class="nav-item"> <a href="mailto:admin@reservezy.com" class = "nav-link">Contact</a></li>
        <!-- Nav Item - User Information -->
        <% if account_signed_in? %>
        <li class="nav-item"> <%= button_to "Log out", destroy_account_session_path, method: :delete, class: "btn btn-primary navbar-btn ml-0 ml-lg-3" %></li>
        <% else %>
        <% end %> 
+       <a href="https://admin765915.typeform.com/to/IzTsg8" target="_blank" class="btn btn-primary navbar-btn ml-0 ml-lg-3">Add Restaurant</a>
       </ul>
         </nav>
         <!-- End of Topbar -->
