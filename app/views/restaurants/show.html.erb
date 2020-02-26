@@ -24,17 +24,15 @@
       <%= image_tag @restaurant.photo.url %>
       </div>
 
-      <section>
-      <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800"><%= @restaurant.name %></h1>
-      </div>
-      </section>
-
-      <section>
       <div class="container">
       <div class="row">
       <div class="col-8">
 
+      
+      <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800"><%= @restaurant.name %></h1>
+      </div>
+    
 <p>
   <strong>Name:</strong>
   <%= @restaurant.name %>
@@ -55,7 +53,6 @@
   <%= @restaurant.cuisine %>
 </p>
 </div>
-</section>
 
 <div class="col-4">
 
