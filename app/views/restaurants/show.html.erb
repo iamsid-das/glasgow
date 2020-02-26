@@ -35,18 +35,16 @@
 
       <div class="modal-body p-4 p-lg-5">
 
-  <div class="row">
+      <div class="restaurant-main-photo" style:"background-image">
+      <div class="photo-overlay">
+      <%= image_tag @restaurant.photo.url %>
+      </div>
 
-    <div class="column">
-    
-    <p>
-    <%= image_tag @restaurant.photo.url %>
-    </p>
-    </div>
+      </div>
    
-
-      <div class="column">
-     
+      <div class="container">
+      <div class="row">
+      <div class="col-8">
 
 <p>
   <strong>Name:</strong>
@@ -67,6 +65,9 @@
   <strong>Cuisine:</strong>
   <%= @restaurant.cuisine %>
 </p>
+
+</div>
+<div class="col-4">
 
 </div>
 </div>
