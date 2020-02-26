@@ -20,25 +20,16 @@
         </nav>
         <!-- End of Topbar -->
 
-        <!-- Begin Page Content -->
-        <div class="container-fluid">
-
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800"><%= @restaurant.name %></h1>
-          </div>
-          <!-- End of Content Wrapper -->
-
-          </div>
-
-      <!-- End of Main Content -->
-
       <div class="modal-body p-4 p-lg-5">
 
       <div class="restaurant-main-photo" style:"background-image">
       <div class="photo-overlay">
       <%= image_tag @restaurant.photo.url %>
       </div>
+
+      <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800"><%= @restaurant.name %></h1>
+          </div>
 
       </div>
    
