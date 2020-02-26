@@ -20,16 +20,11 @@
         </nav>
         <!-- End of Topbar -->
 
-      <div class="modal-body p-4 p-lg-5">
-
-      <div class="restaurant-main-photo" style:"background-image">
-      <div class="photo-overlay">
-      <%= image_tag @restaurant.photo.url %>
-      </div>
+      <div class="restaurant-main-photo" style="background-image:url('<%= restaurant_photo_url @restaurant %>')"> 
 
       <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800"><%= @restaurant.name %></h1>
-          </div>
+      </div>
 
       </div>
    
@@ -65,5 +60,4 @@
 <br>
 <br>
 <br>
-</div>
 </div>
