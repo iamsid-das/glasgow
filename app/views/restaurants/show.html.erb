@@ -20,7 +20,9 @@
         </nav>
         <!-- End of Topbar -->
 
-      <div class="restaurant-main-photo" style="background-image('<%= image_tag restaurant.photo_url(:photo).to_s %>')"> </div>
+      <div class="restaurant-main-photo" style="background-image">
+      <%= image_tag restaurant.photo_url(:photo).to_s %>
+      </div>
 
       <section>
       <div class="d-sm-flex align-items-center justify-content-between mb-4">
