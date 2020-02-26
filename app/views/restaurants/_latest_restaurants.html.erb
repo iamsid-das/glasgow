@@ -3,11 +3,13 @@
     <div class="col-4">
     <div class="restaurant border">
     <%= link_to restaurant_path(restaurant.id) do %>
+    <div class="restaurant-summary p-3">
     <%= image_tag restaurant.photo_url(:thumbnail).to_s %>
     <% end %>
     <h3 class="h5 mt-3"><%= restaurant.name %></h3>
     <p><i class="fas fa-map-marker-alt"><%= restaurant.address %></p></i>
-    <p><%= restaurant.cuisine %></p>
+    <p class="mb-2"><%= restaurant.cuisine %></p>
+    </div>
     </div>
     </div>
 <% end %>
