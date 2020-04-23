@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a webapp application to organize team outings. The current version contanins Authentication and Dashboard features for Vendors.
 
 Things you may want to cover:
 
